@@ -157,6 +157,7 @@ document.addEventListener('change',async e=>{
 });
 let pendingImport;
 document.addEventListener('click',async e=>{
+  if(e.target.closest('.skip')){e.preventDefault();$('main')?.focus();return;}
   const target=e.target.closest('[data-action]');if(!target)return;e.preventDefault();const a=target.dataset.action,id=target.dataset.id;
   if(a==='close'){close();pendingImport=undefined;}
   else if(a==='reading')readingForm();
