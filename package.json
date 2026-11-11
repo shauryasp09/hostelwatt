@@ -1,0 +1,14 @@
+{
+  "name": "hostelwatt",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A hostel electricity journal with actionable trends and fair block comparisons",
+  "scripts": {
+    "start": "python3 -m http.server 5175 --bind 127.0.0.1",
+    "test": "node --test core.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
